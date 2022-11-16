@@ -1,5 +1,5 @@
 import { cormorantscFont } from 'fonts/cormorantscFont'
-import 'shared/ui/global.css'
+import 'shared/global.css'
 
 /**
  * Свойства корневого шаблона.
@@ -18,8 +18,16 @@ const RootLayout = (props: IRootLayout) => {
   const { children } = props
 
   return (
-    <html lang='ru' className={cormorantscFont.className}>
-      <body>{children}</body>
+    <html lang='ru' style={cormorantscFont.style}>
+      <body>
+        <div className='flex flex-col min-h-full'>
+          <header>Header</header>
+
+          <main>{children}</main>
+
+          <footer className='mt-auto'>Footer</footer>
+        </div>
+      </body>
     </html>
   )
 }

@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": "./",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "baseUrl": "app",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -21,8 +21,8 @@
       }
     ],
     "paths": {
-      "images/*": ["../public/images/*"],
-      "fonts/*": ["../public/fonts/*"]
+      "images/*": ["public/images/*"],
+      "fonts/*": ["public/fonts/*"]
     }
   },
   "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],

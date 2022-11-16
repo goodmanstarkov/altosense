@@ -32,7 +32,6 @@
   },
   "rules": {
     "import/prefer-default-export": "off",
-    "import/no-cycle": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "react/function-component-definition": [
@@ -42,7 +41,7 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "react/no-unused-prop-types": "warn",
-    "@typescript-eslint/no-unused-vars": "warn"
+    "react/no-unused-prop-types": "error",
+    "@typescript-eslint/no-unused-vars": "error"
   }
 }

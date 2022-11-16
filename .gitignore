@@ -13,3 +13,6 @@ next-env.d.ts
 
 # Mac file system
 .DS_Store
+
+# Next out
+out
