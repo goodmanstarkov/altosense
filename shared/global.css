@@ -27,9 +27,27 @@ body {
 body {
   font-weight: 400;
   line-height: 1.5;
+  font-family: inherit;
   text-rendering: optimizeSpeed;
 }
 
 [hidden] {
   display: none !important;
+}
+
+a {
+  @apply tw-text-primary;
+}
+
+a:hover {
+  @apply tw-text-primaryLight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply tw-text-primary;
 }

@@ -1,3 +1,3 @@
-const Home = () => <h1 className='text-3xl font-bold underline transition ease-in-out delay-150'>asdads</h1>
+const Home = () => <div>Home Page</div>
 
 export default Home

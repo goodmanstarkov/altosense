@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix: 'tw-',
   content: ['./shared/**/*.{ts,tsx,css}', './widgets/**/*.{ts,tsx,css}', './app/**/*.{ts,tsx,css}'],
+  important: true,
+  prefix: 'tw-',
   theme: {
+    colors: {
+      transparent: 'transparent',
+      primary: '#1b1b1b',
+      primaryLight: '#a7a7a7',
+      secondary: '#dddacd',
+    },
     container: {
       center: true,
       screens: {
