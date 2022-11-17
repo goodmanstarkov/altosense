@@ -1,4 +1,5 @@
 import { cormorantscFont } from 'fonts/cormorantscFont'
+import { Header } from 'widgets/header'
 import { Footer } from 'widgets/footer'
 import 'shared/global.css'
 
@@ -20,13 +21,13 @@ const RootLayout = (props: IRootLayout) => {
 
   return (
     <html lang='ru' style={cormorantscFont.style}>
-      <body className='tw-text-primary'>
-        <div className='tw-flex tw-flex-col tw-min-h-full'>
-          <header>Header</header>
+      <body className='text-primary'>
+        <div className='flex flex-col min-h-full'>
+          <Header />
 
           <main>{children}</main>
 
-          <Footer className='tw-mt-auto' />
+          <Footer />
         </div>
       </body>
     </html>

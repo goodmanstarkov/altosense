@@ -1,5 +1,4 @@
 export interface ILogoProps {
-  // eslint-disable-next-line react/require-default-props
   className?: string
 }
 
