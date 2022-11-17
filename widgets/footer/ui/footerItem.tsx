@@ -1,36 +1,35 @@
+import Link from 'next/link'
 import { Input } from 'shared/ui/input'
 
 export interface IFooterItem {
   title: string
   items: Record<'path' | 'text', string>[]
-  // eslint-disable-next-line react/require-default-props
-  newsletter?: {
+  newsLetter?: {
     title: string
     label: string
   }
 }
 
 export const FooterItem = (props: IFooterItem) => {
-  const { title, items, newsletter } = props
+  const { title, items, newsLetter } = props
 
   return (
     <div>
-      <h3 className='tw-mb-4 tw-font-bold'>{title}</h3>
+      <h3 className='mb-4 font-bold'>{title}</h3>
 
       <ul>
         {items.map(({ path, text }, idx) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <li key={idx} className='tw-mb-3 last:tw-mb-0'>
-            <a href={path}>{text}</a>
+          <li key={idx} className='mb-3 last:mb-0'>
+            <Link href={path}>{text}</Link>
           </li>
         ))}
       </ul>
 
-      {newsletter && (
-        <div className='tw-mt-6'>
-          <h3 className='tw-mb-4 tw-font-bold'>{newsletter.title}</h3>
+      {newsLetter && (
+        <div className='mt-6'>
+          <h3 className='mb-4 font-bold'>{newsLetter.title}</h3>
 
-          <Input placeholder={newsletter.label} />
+          <Input placeholder={newsLetter.label} />
         </div>
       )}
     </div>

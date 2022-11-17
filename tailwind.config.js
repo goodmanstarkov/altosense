@@ -2,7 +2,6 @@
 module.exports = {
   content: ['./shared/**/*.{ts,tsx,css}', './widgets/**/*.{ts,tsx,css}', './app/**/*.{ts,tsx,css}'],
   important: true,
-  prefix: 'tw-',
   theme: {
     colors: {
       transparent: 'transparent',
@@ -22,4 +21,10 @@ module.exports = {
     },
     extend: {},
   },
+  plugins: [
+    ({ addVariant }) => {
+      addVariant('child', '& > *')
+      addVariant('child-hover', '& > *:hover')
+    },
+  ],
 }

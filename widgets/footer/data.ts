@@ -1,6 +1,6 @@
 import { IFooterItem } from './ui/footerItem'
 
-export const data: IFooterItem[] = [
+export const footerItemsData: IFooterItem[] = [
   {
     title: 'Услуги:',
     items: [
@@ -72,7 +72,7 @@ export const data: IFooterItem[] = [
         text: 'AS в социальных сетях',
       },
     ],
-    newsletter: {
+    newsLetter: {
       title: 'Новостная рассылка:',
       label: '*Введите ваш e-mail адрес ',
     },
