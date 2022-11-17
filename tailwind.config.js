@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       transparent: 'transparent',
+      white: '#ffffff',
       primary: '#1b1b1b',
       primaryLight: '#a7a7a7',
       secondary: '#dddacd',
