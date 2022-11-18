@@ -49,5 +49,9 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-primary;
+  @apply font-medium text-primary;
+}
+
+h1 {
+  @apply text-2xl;
 }
