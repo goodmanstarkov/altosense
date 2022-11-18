@@ -23,9 +23,11 @@ const RootLayout = (props: IRootLayout) => {
     <html lang='ru' style={cormorantscFont.style}>
       <body className='text-primary'>
         <div className='flex flex-col min-h-full'>
-          <Header />
+          <div>
+            <Header />
 
-          <main>{children}</main>
+            <main>{children}</main>
+          </div>
 
           <Footer />
         </div>
