@@ -1,6 +1,6 @@
 import { Logo } from 'shared/ui/logo'
-import { FooterItem } from './footerItem'
 import { footerItemsData } from '../data'
+import { FooterItem } from './footerItem'
 
 export const Footer = () => (
   <footer className='mt-auto pt-16 pb-10'>

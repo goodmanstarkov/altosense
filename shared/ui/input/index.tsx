@@ -3,7 +3,7 @@
 import { Input as AntInput, InputProps as AntInputProps } from 'antd'
 import { clsx } from 'clsx'
 
-export type IInputProps = AntInputProps
+export interface IInputProps extends AntInputProps {}
 
 export const Input = (props: IInputProps) => {
   const { className } = props
