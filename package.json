@@ -9,6 +9,7 @@
     "prettier:fix": "prettier **/*.{js,ts,tsx,css,json,md} --write"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.189",
     "@types/node": "18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
@@ -32,6 +33,7 @@
     "@next/font": "^13.0.3",
     "antd": "^4.24.2",
     "clsx": "^1.2.1",
+    "lodash": "^4.17.21",
     "next": "^13.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
