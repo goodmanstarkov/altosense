@@ -17,7 +17,7 @@ export const NavImage = (props: INavImageProps) => {
       <Image className='w-full' src={imgSrc} alt={imgAlt} />
       <LinkOverlay href={link}>
         <p
-          className={`
+          className='
                     absolute
                     top-0
                     left-0
@@ -29,7 +29,7 @@ export const NavImage = (props: INavImageProps) => {
                     text-4xl
                     text-white
                     [text-shadow:0_4px_10px_#1b1b1b]
-                `}
+                '
         >
           {label}
         </p>

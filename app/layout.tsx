@@ -19,15 +19,16 @@ interface IRootLayout {
 const RootLayout = (props: IRootLayout) => {
   const { children } = props
 
+  const fullHeaderHeightPx = '136px'
+  const smallHeaderHeightPx = '68px'
+
   return (
     <html lang='ru' style={cormorantscFont.style}>
       <body className='text-primary'>
         <div className='flex flex-col min-h-full'>
-          <div>
-            <Header />
+          <Header fullHeaderHeightPx={fullHeaderHeightPx} smallHeaderHeightPx={smallHeaderHeightPx} />
 
-            <main>{children}</main>
-          </div>
+          <main className={`pt-[${fullHeaderHeightPx}]`}>{children}</main>
 
           <Footer />
         </div>
