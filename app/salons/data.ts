@@ -1,6 +1,6 @@
-import img1 from 'public/images/ostozhenka_5.png'
-import img2 from 'public/images/ostozhenka_11.png'
-import img3 from 'public/images/tverskoy_boulevard_3.png'
+import ostozhenka5Img from 'public/images/ostozhenka_5.png'
+import ostozhenka11Img from 'public/images/ostozhenka_11.png'
+import tverskoyBoulevard3Img from 'public/images/tverskoy_boulevard_3.png'
 
 export const salonsPage = {
   title: 'Наши салоны',
@@ -8,7 +8,7 @@ export const salonsPage = {
   items: [
     {
       image: {
-        src: img1,
+        src: ostozhenka5Img,
         alt: 'Остоженка, 5',
       },
       path: '#1',
@@ -16,7 +16,7 @@ export const salonsPage = {
     },
     {
       image: {
-        src: img2,
+        src: tverskoyBoulevard3Img,
         alt: 'Тверской бульвар, 3',
       },
       path: '#2',
@@ -24,7 +24,7 @@ export const salonsPage = {
     },
     {
       image: {
-        src: img3,
+        src: ostozhenka11Img,
         alt: 'Остоженка, 11',
       },
       path: '#3',
